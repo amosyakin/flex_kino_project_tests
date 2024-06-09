@@ -3,7 +3,7 @@ import pytest
 import cfg
 
 from qa_guru_diplom.model.api import api
-from utils import attach
+from qa_guru_diplom.utils import attach
 
 
 @pytest.fixture(scope="function")

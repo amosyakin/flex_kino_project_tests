@@ -1,6 +1,8 @@
-pytest
+pytest==8.2.2
 selene==2.0.0rc9
 allure-pytest==2.13.5
-python-dotenv
+python-dotenv==1.0.1
 requests==2.32.3
 jsonschema==4.22.0
+Appium-Python-Client==4.0.0
+config==0.5.1
