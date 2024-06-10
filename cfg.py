@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 from qa_guru_diplom import utils
 
 context = os.getenv('context', 'bstack')
-load_dotenv(Path(f'.env.{context}'))
-# load_dotenv()
+# load_dotenv(Path(f'.env.{context}'))
+load_dotenv()
 
 user_email = os.getenv('USER_EMAIL')
 user_password = os.getenv('USER_PASSWORD')
