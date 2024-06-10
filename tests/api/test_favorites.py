@@ -45,4 +45,3 @@ class TestFavorites:
 
         with allure.step('Проверка статус кода'):
             assert response.status_code == 200
-
