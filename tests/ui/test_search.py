@@ -1,8 +1,8 @@
 import allure
 from allure_commons.types import Severity
 
-from qa_guru_diplom.model.pages.general_page import general_page
-from qa_guru_diplom.model.pages.header import header
+from qa_guru_diplom.model.pages.web.general_page import general_page
+from qa_guru_diplom.model.pages.web.header import header
 
 
 @allure.tag("WEB")

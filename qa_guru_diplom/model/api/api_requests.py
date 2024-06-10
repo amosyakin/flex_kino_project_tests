@@ -1,6 +1,6 @@
 import requests
 
-from qa_guru_diplom.utils import add_api_attach, response_log
+from qa_guru_diplom.utils.attach import add_api_attach, response_log
 
 
 def get_request(url, **kwargs):
