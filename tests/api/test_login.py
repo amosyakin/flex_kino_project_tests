@@ -6,6 +6,7 @@ from qa_guru_diplom.model.api import api
 from qa_guru_diplom.schemas.login import post_login
 
 
+@allure.id("32847")
 @allure.tag("API")
 @allure.severity(Severity.NORMAL)
 @allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1259')
