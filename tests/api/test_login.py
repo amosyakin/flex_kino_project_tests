@@ -6,8 +6,10 @@ from qa_guru_diplom.model.api import api
 from qa_guru_diplom.schemas.login import post_login
 
 
+@allure.id("32837")
 @allure.tag("API")
 @allure.severity(Severity.NORMAL)
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1259')
 @allure.epic('API')
 @allure.feature('Authorization')
 @allure.title('Авторизация пользователя')

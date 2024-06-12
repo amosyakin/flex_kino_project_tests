@@ -9,8 +9,9 @@ from qa_guru_diplom.model.pages.web.header import header
 @allure.severity(Severity.NORMAL)
 @allure.epic("UI")
 @allure.feature('Search')
-@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1212')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1259')
 @allure.title('Выполнить поиск по контенту')
+@allure.id("32845")
 def test_search_by_content(setup_browser):
     general_page.open()
     header.click_search_button()

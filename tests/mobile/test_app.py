@@ -11,10 +11,12 @@ from qa_guru_diplom.model.pages.android_app.welcome_screen import welcome_screen
 @allure.tag("Android")
 @allure.severity(Severity.NORMAL)
 @allure.epic('Android')
+@allure.issue('https://jira.autotests.cloud/browse/HOMEWORK-1259')
 class TestApp:
 
     @allure.feature('Authorization')
     @allure.title('Авторизация пользователя')
+    @allure.id("32839")
     def test_login(self):
 
         welcome_screen.skip()
@@ -25,6 +27,7 @@ class TestApp:
         authorization_page.click_enter_button()
         general_page.should_general_tab()
 
+    @allure.id("32841")
     @allure.feature('Welcome screen')
     @allure.title('Отображение заголовка на страницах')
     def test_welcome_screen(self):
@@ -37,6 +40,7 @@ class TestApp:
         welcome_screen.click_start_button()
         authorization_page.should_title('Добро пожаловать!')
 
+    @allure.id("32837")
     @allure.feature('Site info')
     @allure.title('Переход на страницу "Документы правообладателей"')
     def test_copyright_docs(self):
