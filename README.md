@@ -2,7 +2,11 @@
 
 > https://flex-kino.com
 
-<img title="FLEX" src="qa_guru_diplom/pictures/flex_general_page.jpg"/>
+## FLEX WEB
+<img title="FLEX WEB" src="qa_guru_diplom/pictures/flex_general_page.jpg"/>
+
+## FLEX Android App
+<img title="FLEX Android App" src="qa_guru_diplom/pictures/android_general_page.jpg" height="533" width="240"/>
 
 ## Особенности проекта
 - Автотесты на WEB UI, API и Android App
@@ -52,40 +56,44 @@
 > allure serve allure-results
 
 ## Проект в Jenkins
-> [Jenkins](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_hw_14_kino_flex/)
+> [Jenkins](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/)
 
 ### Запуск автотестов в Jenkins:
-1. Открыть [проект](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_hw_14_kino_flex/)
+1. Открыть [проект](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/)
 
-<img title="Jenkins" src="qa_guru_diplom/pictures/jenkins_general_page.jpg"/>
+<img title="Jenkins" src="qa_guru_diplom/pictures/jenkins_general_page_2.jpg"/>
 
 2. Нажать кнопку "Build Now"
 
 ## Allure отчет
-### [Общие результаты](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_hw_14_kino_flex/5/allure/)
+### [Общие результаты](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/17/allure/)
 <img title="Jenkins" src="qa_guru_diplom/pictures/allure_results.jpg"/>
 
-### [Результат прохождения теста](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_hw_14_kino_flex/5/allure/#behaviors)
+### [Результат прохождения теста](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/17/allure/#behaviors)
 <img title="Jenkins" src="qa_guru_diplom/pictures/allure_results_test_case.jpg"/>
 
 ## Интеграция с Allure TestOps
-> [Allure TestOps](https://allure.autotests.cloud/project/4214/dashboards)
+> [Allure TestOps](https://allure.autotests.cloud/project/4283/dashboards)
 
-### [Дашбоард](https://allure.autotests.cloud/project/4214/dashboards)
+
+### [Дашбоард](https://allure.autotests.cloud/project/4283/dashboards)
 <img title="Allure TestOps" src="qa_guru_diplom/pictures/allure_testops_dashboard.jpg"/>
 
-### [История запусков тестовых наборов](https://allure.autotests.cloud/project/4214/launches)
+### [История запусков тестовых наборов](https://allure.autotests.cloud/project/4283/launches)
 <img title="Allure TestOps" src="qa_guru_diplom/pictures/alluretestops_history_launch.jpg"/>
 
-### [Отображение тест кейса](https://allure.autotests.cloud/project/4214/test-cases/31994?treeId=8254)
+### [Отображение тест кейса](https://allure.autotests.cloud/launch/39864/tree/645711?treeId=8398)
 <img title="Allure TestOps" src="qa_guru_diplom/pictures/alluretestops_test_case.jpg"/>
 
 ## Интеграция с Jira
-### [Ссылка на проект](https://jira.autotests.cloud/browse/HOMEWORK-1212)
-<img title="Jira" src="qa_guru_diplom/pictures/jira.jpg"/>
+### [Ссылка на проект](https://jira.autotests.cloud/browse/HOMEWORK-1259)
+<img title="Jira" src="qa_guru_diplom\qa_guru_diplom\pictures/jira.jpg"/>
 
 ## Оповещения в Telegram
 <img title="Telegram" src="qa_guru_diplom/pictures/telegram_notifications.jpg"/>
 
-## Видео прохождения автотестов
+## Пример прохождения автотестов WEB UI
 <img title="Selenoid" src="qa_guru_diplom/pictures/attach_video_test_cases.gif"/>
+
+## Пример прохождения автотестов Android App
+<img title="Selenoid" src="qa_guru_diplom/pictures/attach_android_video_test_case.gif" height="533" width="240"/>

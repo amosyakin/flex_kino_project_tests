@@ -48,9 +48,9 @@ def to_driver_options():
         options.set_capability('adbExecTimeout', 60000)
         options.set_capability(
             'bstack:options', {
-                'projectName': 'First Python project',
-                'buildName': 'browserstack-build-1',
-                'sessionName': 'BStack first_test',
+                'projectName': 'QA GURU Diplom',
+                'buildName': 'Flex Android App',
+                'sessionName': 'BStack session',
 
                 'userName': bstack_userName,
                 'accessKey': bstack_accessKey,
