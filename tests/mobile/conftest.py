@@ -14,7 +14,7 @@ def mobile_management():
             cfg.remote_url,
             options=cfg.to_driver_options()
         )
-        browser.config.timeout = 10.0
+        browser.config.timeout = 60.0
 
     yield
 

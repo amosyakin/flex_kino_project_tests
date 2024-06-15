@@ -5,6 +5,7 @@ import cfg
 from qa_guru_diplom.model.pages.android_app.authorization_page import authorization_page
 from qa_guru_diplom.model.pages.android_app.external_browser import external_browser
 from qa_guru_diplom.model.pages.android_app.general_page import general_page
+from qa_guru_diplom.model.pages.android_app.permisson_controller import permission_controller
 from qa_guru_diplom.model.pages.android_app.welcome_screen import welcome_screen
 
 
@@ -25,6 +26,7 @@ class TestApp:
         authorization_page.type_email(cfg.user_email)
         authorization_page.type_password(cfg.user_password)
         authorization_page.click_enter_button()
+        permission_controller.click_allow_button()
         general_page.should_general_tab()
 
     @allure.id("32841")
