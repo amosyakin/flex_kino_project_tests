@@ -7,12 +7,15 @@ from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from qa_guru_diplom.utils import attach
+from qa_guru_diplom_tests.utils import attach
 
 
-@pytest.fixture(scope="session", autouse=True)
-def load_env():
-    load_dotenv()
+load_dotenv()
+
+
+selenoid_login = os.getenv("SELENOID_LOGIN")
+selenoid_pass = os.getenv("SELENOID_PASS")
+selenoid_url = os.getenv("SELENOID_URL")
 
 
 @pytest.fixture(scope='function')
@@ -20,10 +23,6 @@ def setup_browser():
     browser.config.base_url = 'https://flex-kino.com'
     browser.config.window_width = 1366
     browser.config.window_height = 768
-
-    selenoid_login = os.getenv("SELENOID_LOGIN")
-    selenoid_pass = os.getenv("SELENOID_PASS")
-    selenoid_url = os.getenv("SELENOID_URL")
 
     options = Options()
     selenoid_capabilities = {

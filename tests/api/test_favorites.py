@@ -1,11 +1,10 @@
 import allure
-import requests
 from allure_commons.types import Severity
 from jsonschema import validate
 
-import cfg
-from qa_guru_diplom.model.api import api
-from qa_guru_diplom.schemas.favorites import post_favorites, get_favorites
+from qa_guru_diplom_tests.model.api import api
+from qa_guru_diplom_tests.schemas.favorites import post_favorites, get_favorites
+from tests.api import conftest
 
 
 @allure.tag("API")
@@ -17,7 +16,7 @@ class TestFavorites:
     @allure.id("32834")
     @allure.title('Добавление в избранное фильма')
     def test_add_favorite(self, auth, endpoint_url):
-        film_id = cfg.film_id
+        film_id = conftest.film_id
         response = api.add_to_favorite(auth, endpoint_url, film_id)
 
         with allure.step('Проверка статус кода'):
@@ -42,8 +41,8 @@ class TestFavorites:
     @allure.id("32836")
     @allure.title('Удаление из избранных фильма')
     def test_delete_favorite(self, auth, endpoint_url):
-        film_id = cfg.film_id
-        response_add_to_favorite = api.add_to_favorite(auth, endpoint_url, film_id)
+        film_id = conftest.film_id
+        api.add_to_favorite(auth, endpoint_url, film_id)
         response = api.delete_favorite_film(auth, endpoint_url, film_id)
 
         with allure.step('Проверка статус кода'):

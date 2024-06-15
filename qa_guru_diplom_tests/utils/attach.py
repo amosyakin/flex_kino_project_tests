@@ -7,7 +7,8 @@ from allure_commons.types import AttachmentType
 from requests import Response
 from selene import browser
 
-import cfg
+import config
+from tests.ui import conftest
 
 
 def add_screenshot(browser):
@@ -26,7 +27,7 @@ def add_html(browser):
 
 
 def add_video(browser):
-    video_url = f"https://selenoid.autotests.cloud/video/" + browser.driver.session_id + ".mp4"
+    video_url = f"https://{conftest.selenoid_url}/video/" + browser.driver.session_id + ".mp4"
     html = "<html><body><video width='100%' height='100%' controls autoplay><source src='" \
            + video_url \
            + "' type='video/mp4'></video></body></html>"
@@ -81,7 +82,7 @@ def mobile_attach_screen():
 def mobile_attach_video(session_id):
     bstack_session = requests.get(
         f'https://api.browserstack.com/app-automate/sessions/{session_id}.json',
-        auth=(cfg.bstack_userName, cfg.bstack_accessKey),
+        auth=(config.bstack_userName, config.bstack_accessKey),
     ).json()
 
     video_url = bstack_session['automation_session']['video_url']

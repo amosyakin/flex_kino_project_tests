@@ -1,8 +1,9 @@
 import allure
 from requests import Response
 
-import cfg
-from qa_guru_diplom.model.api.api_requests import post_request, get_request, delete_request
+import config
+from qa_guru_diplom_tests.model.api.api_requests import post_request, get_request, delete_request
+from tests.api import conftest
 
 
 def add_to_favorite(auth, endpoint_url, film_id) -> Response:
@@ -41,8 +42,8 @@ def delete_favorite_film(auth, endpoint_url, film_id):
 def login(endpoint_url) -> Response:
     url = endpoint_url + '/login/'
     body = {
-        "email": cfg.user_email,
-        "password": cfg.user_password
+        "email": conftest.user_email,
+        "password": conftest.user_password
     }
     with allure.step('Авторизация пользователя'):
         response = post_request(url, body)

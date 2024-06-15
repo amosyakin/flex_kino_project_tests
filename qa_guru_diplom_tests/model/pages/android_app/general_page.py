@@ -8,7 +8,7 @@ class GeneralPage:
         self.navigation_tabs = browser.element((AppiumBy.ID, 'films.android:id/general_graph'))
 
     def should_general_tab(self):
-        with step(f'На странице присутсвует вкладка "Главная"'):
+        with step(f'На странице присутствует вкладка "Главная"'):
             self.navigation_tabs.should(have.attribute('content-desc', 'Главная'))
 
 

@@ -3,10 +3,10 @@
 > https://flex-kino.com
 
 ## FLEX WEB
-<img title="FLEX WEB" src="qa_guru_diplom/pictures/flex_general_page.jpg"/>
+<img title="FLEX WEB" src="qa_guru_diplom_tests/pictures/flex_general_page.jpg"/>
 
 ## FLEX Android App
-<img title="FLEX Android App" src="qa_guru_diplom/pictures/android_general_page.jpg" height="533" width="240"/>
+<img title="FLEX Android App" src="qa_guru_diplom_tests/pictures/android_general_page.jpg" height="533" width="240"/>
 
 ## Особенности проекта
 - Автотесты на WEB UI, API и Android App
@@ -43,7 +43,7 @@
   - Открытие в браузере страницы Документы правообладателей
 
 ## Используемый стэк
-<img title="Python" src="qa_guru_diplom/pictures/icons/python-original.svg" height="40" width="40"/> <img title="Pytest" src="qa_guru_diplom/pictures/icons/pytest-original.svg" height="40" width="40"/> <img title="GitHub" src="qa_guru_diplom/pictures/icons/github-original.svg" height="40" width="40"/> <img title="Selenium" src="qa_guru_diplom/pictures/icons/selenium-original.svg" height="40" width="40"/> <img title="Selene" src="qa_guru_diplom/pictures/icons/selene.png" height="40" width="40"/> <img title="Appium" src="qa_guru_diplom/pictures/icons/appium.svg" height="40" width="40"/> <img title="Allure Report" src="qa_guru_diplom/pictures/icons/Allure_Report.png" height="40" width="40"/> <img title="Allure TestOps" src="qa_guru_diplom/pictures/icons/AllureTestOps.png" height="40" width="40"/> <img title="Jenkins" src="qa_guru_diplom/pictures/icons/jenkins-original.svg" height="40" width="40"/> <img title="BrowserStack" src="qa_guru_diplom/pictures/icons/browserstack.svg" height="40" width="40"/> <img title="Jira" src="qa_guru_diplom/pictures/icons/jira-original.svg" height="40" width="40"/> <img title="PyCharm" src="qa_guru_diplom/pictures/icons/pycharm-original.svg" height="40" width="40"/> <img title="Telegram" src="qa_guru_diplom/pictures/icons/tg.png" height="40" width="40"/>
+<img title="Python" src="qa_guru_diplom_tests/pictures/icons/python-original.svg" height="40" width="40"/> <img title="Pytest" src="qa_guru_diplom_tests/pictures/icons/pytest-original.svg" height="40" width="40"/> <img title="GitHub" src="qa_guru_diplom_tests/pictures/icons/github-original.svg" height="40" width="40"/> <img title="Selenium" src="qa_guru_diplom_tests/pictures/icons/selenium-original.svg" height="40" width="40"/> <img title="Selene" src="qa_guru_diplom_tests/pictures/icons/selene.png" height="40" width="40"/> <img title="Appium" src="qa_guru_diplom_tests/pictures/icons/appium.svg" height="40" width="40"/> <img title="Allure Report" src="qa_guru_diplom_tests/pictures/icons/Allure_Report.png" height="40" width="40"/> <img title="Allure TestOps" src="qa_guru_diplom_testsqa_guru_diplom_tests/pictures/icons/AllureTestOps.png" height="40" width="40"/> <img title="Jenkins" src="qa_guru_diplom_tests/pictures/icons/jenkins-original.svg" height="40" width="40"/> <img title="BrowserStack" src="qa_guru_diplom_tests/pictures/icons/browserstack.svg" height="40" width="40"/> <img title="Jira" src="qa_guru_diplom_tests/pictures/icons/jira-original.svg" height="40" width="40"/> <img title="PyCharm" src="qa_guru_diplom_tests/pictures/icons/pycharm-original.svg" height="40" width="40"/> <img title="Telegram" src="qa_guru_diplom_tests/pictures/icons/tg.png" height="40" width="40"/>
 
 ## Запуск тестов из терминала
 ### Для запуска всех автотестов выполнить в cli:
@@ -56,44 +56,44 @@
 > allure serve allure-results
 
 ## Проект в Jenkins
-> [Jenkins](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/)
+> [Jenkins](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom_tests/)
 
 ### Запуск автотестов в Jenkins:
-1. Открыть [проект](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/)
+1. Открыть [проект](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom_tests/)
 
-<img title="Jenkins" src="qa_guru_diplom/pictures/jenkins_general_page.jpg"/>
+<img title="Jenkins" src="qa_guru_diplom_tests/pictures/jenkins_general_page.jpg"/>
 
 2. Нажать кнопку "Build Now"
 
 ## Allure отчет
-### [Общие результаты](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/17/allure/)
-<img title="Jenkins" src="qa_guru_diplom/pictures/allure_results.jpg"/>
+### [Общие результаты](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom_tests/17/allure/)
+<img title="Jenkins" src="qa_guru_diplom_tests/pictures/allure_results.jpg"/>
 
-### [Результат прохождения теста](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/17/allure/#behaviors)
-<img title="Jenkins" src="qa_guru_diplom/pictures/allure_results_test_case.jpg"/>
+### [Результат прохождения теста](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom_tests/17/allure/#behaviors)
+<img title="Jenkins" src="qa_guru_diplom_tests/pictures/allure_results_test_case.jpg"/>
 
 ## Интеграция с Allure TestOps
 > [Allure TestOps](https://allure.autotests.cloud/project/4283/dashboards)
 
 
 ### [Дашбоард](https://allure.autotests.cloud/project/4283/dashboards)
-<img title="Allure TestOps" src="qa_guru_diplom/pictures/allure_testops_dashboard.jpg"/>
+<img title="Allure TestOps" src="qa_guru_diplom_tests/pictures/allure_testops_dashboard.jpg"/>
 
 ### [История запусков тестовых наборов](https://allure.autotests.cloud/project/4283/launches)
-<img title="Allure TestOps" src="qa_guru_diplom/pictures/alluretestops_history_launch.jpg"/>
+<img title="Allure TestOps" src="qa_guru_diplom_tests/pictures/alluretestops_history_launch.jpg"/>
 
 ### [Отображение тест кейса](https://allure.autotests.cloud/launch/39864/tree/645711?treeId=8398)
-<img title="Allure TestOps" src="qa_guru_diplom/pictures/alluretestops_test_case.jpg"/>
+<img title="Allure TestOps" src="qa_guru_diplom_tests/pictures/alluretestops_test_case.jpg"/>
 
 ## Интеграция с Jira
 ### [Ссылка на проект](https://jira.autotests.cloud/browse/HOMEWORK-1259)
-<img title="Jira" src="qa_guru_diplom/pictures/jira.jpg"/>
+<img title="Jira" src="qa_guru_diplom_tests/pictures/jira.jpg"/>
 
 ## Оповещения в Telegram
-<img title="Telegram" src="qa_guru_diplom/pictures/telegram_notifications.jpg"/>
+<img title="Telegram" src="qa_guru_diplom_tests/pictures/telegram_notifications.jpg"/>
 
 ## Пример прохождения автотестов WEB UI
-<img title="Selenoid" src="qa_guru_diplom/pictures/attach_video_test_cases.gif"/>
+<img title="Selenoid" src="qa_guru_diplom_tests/pictures/attach_video_test_cases.gif"/>
 
 ## Пример прохождения автотестов Android App
-<img title="Selenoid" src="qa_guru_diplom/pictures/attach_android_video_test_case.gif" height="533" width="240"/>
+<img title="Selenoid" src="qa_guru_diplom_tests/pictures/attach_android_video_test_case.gif" height="533" width="240"/>

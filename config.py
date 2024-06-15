@@ -4,19 +4,10 @@ from pathlib import Path
 from appium.options.android import UiAutomator2Options
 from dotenv import load_dotenv
 
-from qa_guru_diplom import utils
+from qa_guru_diplom_tests import utils
 
 context = os.getenv('context', 'bstack')
-# load_dotenv(Path(f'.env.{context}'))
-load_dotenv()
-
-user_email = os.getenv('USER_EMAIL')
-user_password = os.getenv('USER_PASSWORD')
-
-domain_url = os.getenv('DOMAIN_URL')
-api_v = os.getenv('API_V')
-
-film_id = os.getenv('FILM_ID')
+load_dotenv(Path(f'.env.{context}'))
 
 remote_url = os.getenv('REMOTE_URL')
 deviceName = os.getenv('DEVICE_NAME')
@@ -25,9 +16,6 @@ app = os.getenv('APP')
 appWaitActivity = 'films.android.*'
 bstack_userName = os.getenv('BSTACK_USER_NAME')
 bstack_accessKey = os.getenv('BSTACK_ACCESSKEY')
-
-if not app:
-    raise ValueError("The 'app' environment variable is not set or is empty")
 
 
 def to_driver_options():

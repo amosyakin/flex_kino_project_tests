@@ -11,7 +11,7 @@ class Header:
         self.search_result = browser.element('.search__result')
 
     def click_menu(self, menu_name):
-        with allure.step('В хэдэре перейти в раздел {menu}'):
+        with allure.step('В хедере перейти в раздел {menu}'):
             self.header_menu.element(by.text(menu_name)).click()
 
     def click_search_button(self):

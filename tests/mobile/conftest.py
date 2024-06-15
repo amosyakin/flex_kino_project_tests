@@ -1,18 +1,27 @@
+import os
+
 import allure
 import pytest
+from dotenv import load_dotenv
 from selene import browser
 from appium import webdriver
 
-import cfg
-from qa_guru_diplom.utils.attach import mobile_attach_screen, mobile_attach_video
+import config
+from qa_guru_diplom_tests.utils.attach import mobile_attach_screen, mobile_attach_video
+
+
+load_dotenv()
+
+user_email = os.getenv('USER_EMAIL')
+user_password = os.getenv('USER_PASSWORD')
 
 
 @pytest.fixture(scope='function', autouse=True)
 def mobile_management():
     with allure.step('init app session'):
         browser.config.driver = webdriver.Remote(
-            cfg.remote_url,
-            options=cfg.to_driver_options()
+            config.remote_url,
+            options=config.to_driver_options()
         )
         browser.config.timeout = 60.0
 
@@ -25,5 +34,5 @@ def mobile_management():
     with allure.step('tear down app session with id: ' + session_id):
         browser.quit()
 
-    if cfg.context == 'bstack':
+    if config.context == 'bstack':
         mobile_attach_video(session_id)

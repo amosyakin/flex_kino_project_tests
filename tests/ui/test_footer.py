@@ -1,9 +1,9 @@
 import allure
 from allure_commons.types import Severity
 
-from qa_guru_diplom.model.pages.web.footer import footer
-from qa_guru_diplom.model.pages.web.general_page import general_page
-from qa_guru_diplom.model.pages.web.page import page
+from qa_guru_diplom_tests.model.pages.web.footer import footer
+from qa_guru_diplom_tests.model.pages.web.general_page import general_page
+from qa_guru_diplom_tests.model.pages.web.page import page
 
 
 @allure.tag("WEB")

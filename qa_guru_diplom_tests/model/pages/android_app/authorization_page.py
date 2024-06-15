@@ -3,7 +3,7 @@ from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, have
 
 
-class AutorizationPage:
+class AuthorizationPage:
     def __init__(self):
         self.auth_button = browser.element((AppiumBy.ID, 'films.android:id/authBtn'))
         self.email_tab = browser.element((AppiumBy.ID, 'films.android:id/emailBtn'))
@@ -42,4 +42,4 @@ class AutorizationPage:
             self.copyright_docs_button.click()
 
 
-authorization_page = AutorizationPage()
+authorization_page = AuthorizationPage()

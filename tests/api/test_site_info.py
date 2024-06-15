@@ -2,8 +2,8 @@ import allure
 from allure_commons.types import Severity
 from jsonschema.validators import validate
 
-from qa_guru_diplom.schemas.site_info import get_site_info
-from qa_guru_diplom.model.api import api
+from qa_guru_diplom_tests.schemas.site_info import get_site_info
+from qa_guru_diplom_tests.model.api import api
 
 
 @allure.tag("API")
