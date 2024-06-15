@@ -61,7 +61,7 @@
 ### Запуск автотестов в Jenkins:
 1. Открыть [проект](https://jenkins.autotests.cloud/job/amosyakin_qa_guru_diplom/)
 
-<img title="Jenkins" src="qa_guru_diplom/pictures/jenkins_general_page_2.jpg"/>
+<img title="Jenkins" src="qa_guru_diplom/pictures/jenkins_general_page.jpg"/>
 
 2. Нажать кнопку "Build Now"
 
