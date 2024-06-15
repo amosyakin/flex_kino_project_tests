@@ -50,4 +50,4 @@ class TestApp:
         welcome_screen.skip()
         authorization_page.click_auth_button()
         authorization_page.click_copyright_docs_button()
-        external_browser.should_url('https://flex-kino.com/copyright_docs/')
+        external_browser.should_url('flex-kino.com/copyright_docs/')
