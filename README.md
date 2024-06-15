@@ -87,7 +87,7 @@
 
 ## Интеграция с Jira
 ### [Ссылка на проект](https://jira.autotests.cloud/browse/HOMEWORK-1259)
-<img title="Jira" src="qa_guru_diplom\qa_guru_diplom\pictures/jira.jpg"/>
+<img title="Jira" src="qa_guru_diplom/pictures/jira.jpg"/>
 
 ## Оповещения в Telegram
 <img title="Telegram" src="qa_guru_diplom/pictures/telegram_notifications.jpg"/>
