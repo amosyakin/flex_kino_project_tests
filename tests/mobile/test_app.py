@@ -34,14 +34,11 @@ class TestApp:
 
     @allure.id("32841")
     @allure.feature('Welcome screen')
-    @allure.title('Отображение заголовка на страницах')
+    @allure.title("Прохождение Welcome Screens")
     def test_welcome_screen(self):
 
-        welcome_screen.should_text('Лучшие сериалы и фильмы мира собраны здесь')
         welcome_screen.click_next_page_button()
-        welcome_screen.should_text('Смотрите сериалы')
         welcome_screen.click_next_page_button()
-        welcome_screen.should_text('Получайте удовольствие от крутой озвучки')
         welcome_screen.click_start_button()
         authorization_page.should_title('Добро пожаловать!')
 

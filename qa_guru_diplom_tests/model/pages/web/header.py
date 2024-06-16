@@ -14,7 +14,7 @@ class Header:
         self.profile_email = browser.all('.user-profile__login')
 
     def click_menu(self, menu_name):
-        with allure.step('В хедере перейти в раздел {menu}'):
+        with allure.step(f'В хедере перейти в раздел {menu_name}'):
             self.header_menu.element(by.text(menu_name)).click()
 
     def click_search_button(self):
