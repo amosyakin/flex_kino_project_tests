@@ -16,11 +16,15 @@ class TestFavorites:
     @allure.id("32834")
     @allure.title('Добавление в избранное фильма')
     def test_add_favorite(self, auth, endpoint_url):
-        film_id = conftest.film_id
+        film_id = int(conftest.film_id)
         response = api.add_to_favorite(auth, endpoint_url, film_id)
 
         with allure.step('Проверка статус кода'):
             assert response.status_code == 201
+
+        with allure.step('Проверка ответа Response'):
+            response_json = response.json()
+            assert response_json['id'] == film_id
 
         with allure.step('Валидация JSON-схемы'):
             response_json_body = response.json()
@@ -29,10 +33,16 @@ class TestFavorites:
     @allure.id("32835")
     @allure.title('Получение списка избранных фильмов')
     def test_get_favorite(self, auth, endpoint_url):
+        film_id = int(conftest.film_id)
+        api.add_to_favorite(auth, endpoint_url, film_id)
         response = api.get_favorites(auth, endpoint_url)
 
         with allure.step('Проверка статус кода'):
             assert response.status_code == 200
+
+        with allure.step('Проверка ответа Response'):
+            response_json = response.json()
+            assert response_json['results'][0]['id'] == film_id
 
         with allure.step('Валидация JSON-схемы'):
             response_json_body = response.json()
@@ -41,7 +51,7 @@ class TestFavorites:
     @allure.id("32836")
     @allure.title('Удаление из избранных фильма')
     def test_delete_favorite(self, auth, endpoint_url):
-        film_id = conftest.film_id
+        film_id = int(conftest.film_id)
         api.add_to_favorite(auth, endpoint_url, film_id)
         response = api.delete_favorite_film(auth, endpoint_url, film_id)
 

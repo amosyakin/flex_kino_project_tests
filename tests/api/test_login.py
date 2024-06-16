@@ -4,6 +4,7 @@ from jsonschema.validators import validate
 
 from qa_guru_diplom_tests.model.api import api
 from qa_guru_diplom_tests.schemas.login import post_login
+from tests.api import conftest
 
 
 @allure.id("32847")
@@ -18,6 +19,10 @@ def test_login(endpoint_url):
 
     with allure.step('Проверка статус кода'):
         assert response.status_code == 200
+
+    with allure.step('Проверка ответа Response'):
+        response_json = response.json()
+        assert response_json['user']['email'] == conftest.user_email
 
     with allure.step('Валидация JSON-схемы'):
         response_json_body = response.json()

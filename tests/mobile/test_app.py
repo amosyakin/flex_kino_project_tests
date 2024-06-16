@@ -6,6 +6,7 @@ from qa_guru_diplom_tests.model.pages.android_app.authorization_page import auth
 from qa_guru_diplom_tests.model.pages.android_app.external_browser import external_browser
 from qa_guru_diplom_tests.model.pages.android_app.general_page import general_page
 from qa_guru_diplom_tests.model.pages.android_app.permisson_controller import permission_controller
+from qa_guru_diplom_tests.model.pages.android_app.profile_page import profile_page
 from qa_guru_diplom_tests.model.pages.android_app.welcome_screen import welcome_screen
 from tests.mobile import conftest
 
@@ -28,7 +29,8 @@ class TestApp:
         authorization_page.type_password(conftest.user_password)
         authorization_page.click_enter_button()
         permission_controller.click_allow_button()
-        general_page.should_general_tab()
+        general_page.click_profile_tab()
+        profile_page.should_email_info(conftest.user_email)
 
     @allure.id("32841")
     @allure.feature('Welcome screen')

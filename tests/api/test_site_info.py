@@ -19,6 +19,10 @@ def test_site_info(endpoint_url):
     with allure.step('Проверка статус кода'):
         assert response.status_code == 200
 
+    with allure.step('Проверка ответа Response'):
+        response_json = response.json()
+        assert response_json['id'] == 1
+
     with allure.step('Валидация JSON-схемы'):
         response_json_body = response.json()
         validate(response_json_body, get_site_info)

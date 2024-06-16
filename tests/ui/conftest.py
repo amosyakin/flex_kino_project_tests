@@ -12,6 +12,8 @@ from qa_guru_diplom_tests.utils import attach
 
 load_dotenv()
 
+user_email = os.getenv('USER_EMAIL')
+user_password = os.getenv('USER_PASSWORD')
 
 selenoid_login = os.getenv("SELENOID_LOGIN")
 selenoid_pass = os.getenv("SELENOID_PASS")
