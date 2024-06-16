@@ -7,7 +7,7 @@ from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from qa_guru_diplom_tests.utils import attach
+from flex_kino_project_tests.utils import attach
 
 
 load_dotenv()

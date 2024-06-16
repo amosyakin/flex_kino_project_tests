@@ -1,8 +1,8 @@
 import allure
 from allure_commons.types import Severity
 
-from qa_guru_diplom_tests.model.pages.web.header import header
-from qa_guru_diplom_tests.model.pages.web.login_page import login_page
+from flex_kino_project_tests.model.pages.web.header import header
+from flex_kino_project_tests.model.pages.web.login_page import login_page
 from tests.ui import conftest
 
 

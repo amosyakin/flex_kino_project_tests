@@ -2,8 +2,8 @@ import allure
 from allure_commons.types import Severity
 from jsonschema.validators import validate
 
-from qa_guru_diplom_tests.model.api import api
-from qa_guru_diplom_tests.schemas.login import post_login
+from flex_kino_project_tests.model.api import api
+from flex_kino_project_tests.schemas.login import post_login
 from tests.api import conftest
 
 

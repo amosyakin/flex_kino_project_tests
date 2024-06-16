@@ -7,7 +7,7 @@ from selene import browser
 from appium import webdriver
 
 import config
-from qa_guru_diplom_tests.utils.attach import mobile_attach_screen, mobile_attach_video
+from flex_kino_project_tests.utils.attach import mobile_attach_screen, mobile_attach_video
 
 
 load_dotenv()

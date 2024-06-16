@@ -2,8 +2,8 @@ import allure
 from allure_commons.types import Severity
 from jsonschema import validate
 
-from qa_guru_diplom_tests.model.api import api
-from qa_guru_diplom_tests.schemas.favorites import post_favorites, get_favorites
+from flex_kino_project_tests.model.api import api
+from flex_kino_project_tests.schemas.favorites import post_favorites, get_favorites
 from tests.api import conftest
 
 
@@ -57,3 +57,6 @@ class TestFavorites:
 
         with allure.step('Проверка статус кода'):
             assert response.status_code == 200
+
+        with allure.step('Проверка ответа Response'):
+            assert response.text == ''

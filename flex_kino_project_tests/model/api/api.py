@@ -1,7 +1,7 @@
 import allure
 from requests import Response
 
-from qa_guru_diplom_tests.model.api.api_requests import api_request
+from flex_kino_project_tests.model.api.api_requests import api_request
 from tests.api import conftest
 
 

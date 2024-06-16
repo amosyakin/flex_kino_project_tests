@@ -2,9 +2,9 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from qa_guru_diplom_tests.model.pages.web.general_page import general_page
-from qa_guru_diplom_tests.model.pages.web.header import header
-from qa_guru_diplom_tests.model.pages.web.page import page
+from flex_kino_project_tests.model.pages.web.general_page import general_page
+from flex_kino_project_tests.model.pages.web.header import header
+from flex_kino_project_tests.model.pages.web.page import page
 
 
 @allure.tag("WEB")

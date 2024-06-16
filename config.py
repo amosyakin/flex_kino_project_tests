@@ -4,7 +4,7 @@ from pathlib import Path
 from appium.options.android import UiAutomator2Options
 from dotenv import load_dotenv
 
-from qa_guru_diplom_tests import utils
+from flex_kino_project_tests import utils
 
 context = os.getenv('context', 'bstack')
 load_dotenv(Path(f'.env.{context}'))

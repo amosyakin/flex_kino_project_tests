@@ -3,8 +3,8 @@ import os
 import pytest
 from dotenv import load_dotenv
 
-from qa_guru_diplom_tests.model.api import api
-from qa_guru_diplom_tests.utils import attach
+from flex_kino_project_tests.model.api import api
+from flex_kino_project_tests.utils import attach
 
 
 load_dotenv()

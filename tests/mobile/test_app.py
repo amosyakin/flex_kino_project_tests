@@ -1,13 +1,12 @@
 import allure
 from allure_commons.types import Severity
 
-import config
-from qa_guru_diplom_tests.model.pages.android_app.authorization_page import authorization_page
-from qa_guru_diplom_tests.model.pages.android_app.external_browser import external_browser
-from qa_guru_diplom_tests.model.pages.android_app.general_page import general_page
-from qa_guru_diplom_tests.model.pages.android_app.permisson_controller import permission_controller
-from qa_guru_diplom_tests.model.pages.android_app.profile_page import profile_page
-from qa_guru_diplom_tests.model.pages.android_app.welcome_screen import welcome_screen
+from flex_kino_project_tests.model.pages.android_app.authorization_page import authorization_page
+from flex_kino_project_tests.model.pages.android_app.external_browser import external_browser
+from flex_kino_project_tests.model.pages.android_app.general_page import general_page
+from flex_kino_project_tests.model.pages.android_app.permisson_controller import permission_controller
+from flex_kino_project_tests.model.pages.android_app.profile_page import profile_page
+from flex_kino_project_tests.model.pages.android_app.welcome_screen import welcome_screen
 from tests.mobile import conftest
 
 
